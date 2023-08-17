@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+/* estilos globales */
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+}
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+:root {
+  --blanco: #ffffff;
+  --primario: #8a0a8a;
+  --secundario: #212121;
+}
+html {
+  font-size: 62.5%;
+ 
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+
+}
+h2{
+  text-align: center;
+  font-size: 4rem;
+  padding: 1rem;
+}
+.boton{
+  background-color: var(--blanco);
+  color: var(--secundario);
+  padding: 1rem 3rem;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: .5rem;
+  text-align: center;
+}
+
+/* header y navegacion */
+.header{
+  background-color: var(--secundario);
+  height: 8rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.nav-principal{
+  display: flex;
+  justify-content:space-between ;
+}
+.nav-enlace{
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+.nav-enlace--activo,
+.nav-enlace:hover{
+  background-color: var(--blanco);
+  color: var(--secundario);
+  padding: 2.5rem;
+  transition: .5s;
+}
+
+.logo{
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding: 0 5rem;
+  line-height: 8rem;
+  color: var(--blanco);
+}
+ul{
+  display: flex;
+  margin-right: 4rem;
+}
+li{
+  font-size: 2.3rem;
+  margin: 0 2rem;
+  line-height: 8rem;
+}
+/* fin de header y navegacion */
+
+/* inicio de fondo  */
+.fondo{
+  background-image: url(../img/fondo.webp);
+  height: 65rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 25rem;
+  background-color: #212121;
+  
+}
+.contenido-fondo{
+  background-color: rgba(0,0,0,.4);
+  padding: .5rem;
+  margin: 1rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenido-fondo h1,
+.contenido-fondo p{
+  color: var(--blanco);
+}
+/* fin de fondo  */
+
+/* inicio de producto 2x1 */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+.producto{
+  box-shadow:  0px 1px 10px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.producto:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+.producto__imagen{
+width: 100%;
+}
+.producto__informacion{
+text-align: center;
+color: var(--secundario);
+}
+.producto__nombre{
+font-size: 3rem;
+}
+.producto__precio{
+font-size: 2.5rem;
+padding-bottom: 1rem;
+}
+.producto__ver{
+  background-color: var(--secundario);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: .5rem;
+  text-align: center;
+}
+/* https://www.hogarmania.com/belleza/moda/ropa/imprescindibles-este-invierno-6271.html */
+
+/* fin de producto 2x1 */
+
+/* inicio de llevate lo mejor */
+.bloques{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  padding: 2.5rem;
+  
+}
+.bloque{
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(129, 147, 161, 0.1);
+  
+}
+.bloque__titulo{
+  margin: 0;
+  padding: 1rem;
+  font-size: 3rem;
+}
+.bloque__texto{
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+/* fin de llevate lo mejor */
+
+/* inicio footer */
+.footer{
+  background-color: var(--secundario);
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+.contenedor__footer ul li{
+  padding: 2rem;
+}
+.mapa__contenido{
+  padding: 2.5rem;
+  
+}
+.boton2{
+  background-color: var(--secundario);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: .5rem;
+  text-align: center;
+}
+/* fin footer */
+
+
+/* Ojo 1rem es igual a 10 px, no manejen pixeles
+ejemplo 50px = 5rem */
+
+/* inicia tienda- sam */
+
+
+/* fin tienda-sam */
+
+
+/* incia nosotros- absalon */
+.somoss {
+  display: flex;
+  padding-top: 1%;
+  color: black;
+  font-size: 150%;
+
+}
+.img_somos{
+  padding: 1.5rem;
+  border-radius: 2.3rem;
+
+}
+.somosT{
+  padding-left: 1rem;
+}
+.textquienes{
+  padding-left: 1rem;
+}
+
+/* fin nosotros-absalon */
+
+
+/* inicia contacto-damaris */
+
+
+
+#inpN{
+  width: 20rem;
+  height: 3rem;
+}
+input{
+  border-radius: 2.5rem;
+  text-align: center;
+}
+#subandrest{
+  width: 11rem;
+  height: 3rem;
+  margin-top: 1.5rem;
+}
+select{
+  border-radius: 2.5rem;
+  text-align: center;
+  width: 20rem;
+  height: 3rem;
+}
+option{
+  background-color: rgba(249, 237, 237, 0.2);
+  font-size: 1.8rem;
+  text-align: center;
+  
+}
+textarea{
+  border-radius: 2rem;
+  font-size: 25rem;
+  border: solid grey;
+  margin-top: 2rem;
+  resize: none;
+ 
+}
+.radio{
+ margin-top: 1rem;
+ margin-left: 1rem;
+ font-size: 25rem;
+
+}
+.genero{
+  font-size: 2rem;
+}
+
+
+label{
+  display: block;
+  padding-left: 1rem;
+  text-indent: -1rem;
+  font-size: 2rem;
+}
+#contac{
+  text-align: center;
+  margin-top: 5rem;
+}
+.Contenedor{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.formularioG{
+width: 65rem;
+padding-left: 1rem;
+margin: 1rem;
+display: block;
+
+}
+
+.ima{
+  background-image: url(/img/imagen-contacto.jpg);
+  width: 70rem;
+  margin-right: 15rem;
+  height: 70rem;
+  border-radius: 10rem;
+}
+.ima:hover{
+  width:75rem ;
+  height: 75rem;
+}
+
+
+h1{
+  text-align: center;
+}
+
+table{
+  background-color: rgba(27, 31, 31, 0.295);
+  border-collapse: collapse;
+  text-align: center;
+  margin-left: 38%;
+  height: 3rem;
+  border: solid grey 0.5rem;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+ 
+}
+
+td,th{
+  font-size: 2rem;
+  padding: 3rem;
+  
+}
+.semana{
+  background-color: rgba(29, 28, 28, 0.123);;
+}
+.semana:hover{
+  font-size: 2.3rem;
+  color: white;
+}
+
+/* fin contacto-damaris */

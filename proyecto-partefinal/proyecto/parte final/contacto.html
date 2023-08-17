@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="PRW" content="Damaris, Jorge, Samantha, Absalon" />
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta charset="ISO-8859-1" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="icon" href="./img/icono.jpeg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>ClothingS</title>
+</head>
+
+<body>
+
+  <!-- incio del header con navegacion -->
+  <header class="header">
+    <nav class="nav-principal">
+      <a class="logo" href="index.html">ClothingS</a>
+
+      <ul>
+        <li><a class="nav-enlace" href="index.html">inicio</a></li>
+        <li><a class="nav-enlace" href="tienda.html">tienda</a></li>
+        <li><a class="nav-enlace" href="nosotros.html">nosotros</a></li>
+        <li><a class="nav-enlace nav-enlace--activo" href="contacto.html"> contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- fin del header con navegacion -->
+
+  <!-- inicio del fondo -->
+  <section class="fondo">
+    <div class="contenido-fondo">
+      <h1>Verano & Invierno</h1>
+      <p>Guadalupe, NL</p>
+      <a class="boton" href="contacto.html">contáctanos</a>
+    </div>
+  </section>
+  <!-- fin del fondo -->
+
+  <!-- inicio del contenido -->
+  <main>
+
+    <!-- Trabajas solo en main Damaris agregas si falta algo en la rubrica
+      borras despues de terminar esto
+      -->
+    <h2>Contacto</h2>
+    <section id="contac">
+
+      <form action="mailto:damarisarciga1520gmail.com" method="post" enctype="text/plain">
+
+        <div class="Contenedor">
+          <div class="formularioG">
+
+            <div>
+              <label>Nombre</label><br>
+              <input required id="inpN" type="text" placeholder=" Ingresa tu Nombre" />
+            </div>
+            <br>
+
+            <div>
+              <label>Número de Teléfono</label><br>
+              <input id="inpN" type="number" placeholder="Ingresa tu Número" />
+            </div>
+            <br>
+
+            <div>
+              <label>Email</label><br>
+              <input required id="inpN" type="email" placeholder="Ingresa tu Email" />
+            </div>
+            <br>
+
+            <div>
+              <label>Municipio</label> <br>
+              <select name="Muni">
+                <option selected disabled>Selecciona una opción</option>
+                <option value="1">San Pedro Garza García</option>
+                <option value="2">Rayones</option>
+                <option value="3">Montemorelos</option>
+                <option value="4">Monterrey</option>
+                <option value="5">Juárez</option>
+                <option value="6">Lampazos de Naranjo</option>
+                <option value="7">Guadalupe</option>
+                <option value="8">General Escobedo</option>
+              </select>
+            </div>
+            <br>
+
+            <div class="genero" >
+              <label>Género</label><br>
+              <label></label><input class="radio" type="radio" name="hom" value="hom">Hombre
+              <input class="radio"type="radio" name="Muj" value="Muj">Mujer
+              <input class="radio"  type="radio" name="otro" value="Otro">Otro
+            </div>
+            <br>
+
+            <div>
+              <label>
+                <input required type="checkbox" /> Al dar click aceptas todos nuestros
+                términos y condiciones.
+              </label>
+            </div>
+            <br>
+
+            <div>
+              <label>Comentarios</label><br>
+              <textarea required rows="10" cols="50"></textarea>
+            </div>
+            <br>
+
+            <div>
+              <input id="subandrest" type="submit" value="Enviar" /> <br>
+              <input id="subandrest" type="reset" name="borrar">
+            </div>
+            <br>
+            <!-- audio-->
+            <audio id="Audio" autoplay>
+              <source controls src="/proyecto/parte final/Audio/audio.mp3" type="audio/mp3" />
+
+            </audio> <br>
+          </div>
+            <div>
+              <img  class="ima"src="/proyecto/parte final/img/imagen-contacto.jpg">
+            </div>
+
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- fin del contenido -->
+
+
+  <!-- inicio del footeer -->
+  <footer class="footer">
+    <div class="contenedor__footer">
+
+      <nav class="nav-principal">
+        <a class="logo" href="index.html">ClothingS</a>
+        <ul>
+
+          <li>
+            <a href="https://www.facebook.com/shopzurikenya" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40"
+                height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/searsmexico" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="40"
+                height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mussimx/?hl=es" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40"
+                height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </footer>
+
+  <!-- fin del footer -->
+</body>
+
+</html>
